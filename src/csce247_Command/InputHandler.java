@@ -18,10 +18,10 @@ public class InputHandler {
    */
   public InputHandler(Document document) {
     commands = new HashMap<String, Command>();
-    commands.put("load", LoadCommand);
-    commands.put("save", SaveCommand);
-    commands.put("spell", SpellCheckCommand);
-    commands.put("print", PrintCommand);
+    commands.put("load", LoadCommand(document));
+    commands.put("save", SaveCommand(document));
+    commands.put("spell", SpellCheckCommand(document));
+    commands.put("print", PrintCommand(document));
   }
 
   /**
