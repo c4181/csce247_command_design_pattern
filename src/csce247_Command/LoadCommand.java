@@ -10,7 +10,7 @@ public class LoadCommand implements Command {
      * 
      * @param doc
      */
-    public loadCommand(Document doc){
+    public LoadCommand(Document doc){
         this.document = doc;
     }
 
